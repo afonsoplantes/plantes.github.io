@@ -1,15 +1,16 @@
 body {
-    background-image: url('https://images3.alphacoders.com/787/787049.jpg');
+    background-image: url('https://topsuporte.com.br/wp-content/uploads/2016/09/fundocontador.jpg');
     /*define altura e largura de imagem fixa*/
     /* background-size: 600px 600px; */
     /*adaptado a altura da tela*/
     background-size: auto 100vh;
     font-family: Arial;
-    height: 100vh; /* ajusta a viewport para 100% da pagina/*/
+    /* ajusta a viewport para 100% da pagina/*/
+    height: 100vh; 
   }
   
   .menu {
-    background-color: white;
+    background-colo: rgb(143, 205, 226);
   }
   
   /*Change list style to remobe circles. Pega todas as li em menus */
@@ -24,7 +25,8 @@ body {
   
   /* Show an underline like hover */
   a {
-    color: teal;
+    color: whitesmoke;
+    font-weight:bold;
     text-decoration: none;
   }
   a:hover {
