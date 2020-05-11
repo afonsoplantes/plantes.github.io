@@ -1,45 +1,51 @@
 body {
-    background-image: url('https://topsuporte.com.br/wp-content/uploads/2016/09/fundocontador.jpg');
-    /*define altura e largura de imagem fixa*/
-    /* background-size: 600px 600px; */
-    /*adaptado a altura da tela*/
-    background-size: auto 100vh;
-    font-family: Arial;
-    /* ajusta a viewport para 100% da pagina/*/
-    height: 100vh; 
-  }
+  /* add an image */
+  background-image: url('https://topsuporte.com.br/wp-content/uploads/2016/09/fundocontador.jpg');
+  /*change backgroung size*/
+  /* background-size: auto 100vh; */
+  background-size: cover;
+  /* Def. a new font family to the body text */
+  font-family: Arial;
+  /* Set website margin */
+  margin: 0;
+  /* set view por heigh to 100% /*/
+  height: 100vh; 
+  /* adds a blur to background */
+  backdrop-filter: blur(4px);
+}
   
-  .menu {
-    background-color:none;
-  }
+.menu {
+  background-color:none;
+}
   
-  /*Change list style to remobe circles. Pega todas as li em menus */
-  .menu li { 
-    list-style: none;
-  }
-  /*Foces all links on menu to be side by side*/
-  .menu ul {
-    display: flex;
-    justify-content: space-around;
-  }
+/*Change list style to remobe circles. Pega todas as li em menus */
+.menu li { 
+  list-style: none;
+}
+
+/*Foces all links on menu to be side by side*/
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
   
-  /* Show an underline like hover */
-  a {
-    color: whitesmoke;
-    font-weight:bold;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
+/* Show hover underline*/
+a {
+  color: whitesmoke;
+  font-weight:bold;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
   
-  /*declarando as mesmas propriedades para duas classes*/
-  .site-subtitle,
-  .site-title {
-    color: whitesmoke;
-    text-align: center;
-  }
+/*Declarando os mesmos parametro para uma classe*/
+.site-subtitle,
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+}
   
-  .site-subtitle {
-    font-style: italic;
-  }
+.site-subtitle {
+  font-style: italic;
+}
