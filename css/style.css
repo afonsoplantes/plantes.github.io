@@ -1,0 +1,43 @@
+body {
+    background-image: url('https://images3.alphacoders.com/787/787049.jpg');
+    /*define altura e largura de imagem fixa*/
+    /* background-size: 600px 600px; */
+    /*adaptado a altura da tela*/
+    background-size: auto 100vh;
+    font-family: Arial;
+    height: 100vh; /* ajusta a viewport para 100% da pagina/*/
+  }
+  
+  .menu {
+    background-color: white;
+  }
+  
+  /*Change list style to remobe circles. Pega todas as li em menus */
+  .menu li { 
+    list-style: none;
+  }
+  /*Foces all links on menu to be side by side*/
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Show an underline like hover */
+  a {
+    color: teal;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /*declarando as mesmas propriedades para duas classes*/
+  .site-subtitle,
+  .site-title {
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+  }
