@@ -21,6 +21,8 @@ body {
   /* adds a blur to background */
   /* backdrop-filter: blur(4px); */
   font-size: 12px;
+  /* tudo que não for titulo do site */
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* Media serve para tornar o site responsivo */
@@ -81,17 +83,81 @@ a:hover {
   color: whitesmoke;
   text-align: center;
   font-size: 3em;
+  font-family: 'Luckiest Guy', cursive;
+  
 }
+
+/* 
+font-family: 'Luckiest Guy', cursive; 
+font-family: 'Satisfy', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+*/
   
 .site-subtitle {
-  color: silver;
+  color: whitesmoke;
   font-style: italic;
   font-weight: lighter;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
+  font-family: 'Satisfy', cursive;
+  line-height: 1.5em; /*altura da linha*/
+}
+
+.portifolio {
+  color: whitesmoke;
+  padding: 1em;
+}
+
+.portifolio h2 {
+  font-family: 'Satisfy', cursive;
+  color: whitesmoke;
+  margin-bottom: 1.5em;
+}
+
+.portifolio .grid {
+  /* Diferente do flex que faz colunas pra todo lado, grid 
+  possibilita especificar as quantidade de colunas */
+  display: grid;
+  gap: 2em;
+  
+}
+
+@media (min-width: 560px) {
+  .portifolio .grid {
+    grid-template-columns: 240px 240px;    
+  }
+}
+
+@media (min-width: 880px) {
+  .portifolio .grid {
+    grid-template-columns: repeat(3,260px);    
+    justify-content: center;
+    align-content: center;
+    height: calc(100vh - 8em -48px);
+    
+  }
+}
+
+.portifolio figure {
+  text-align: center;
 }
 
 .img-portfolio {
+  color: whitesmoke;
   width: 180px;
   height: 180px;
+  /* centraliza e ajusta a imagem */
+  object-fit: cover;
+  object-position: bottom center;
+  
+  /* Arredonda as imagens */
+  border-radius: 50px;
+  /* flex-wrap: wrap; */
 }
+
+/* @media (min-width: 1200px) {
+  .img-portfolio {
+    height: auto;
+    width: 100%;   
+  }
+} */
