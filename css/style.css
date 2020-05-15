@@ -142,7 +142,7 @@ a:hover {
 }
 
 @media (min-width: 1200px) {
-  .conteiner {
+  .container {
     /* Centralizar a caixa de texto horizontal*/
     margin-left: auto;
     margin-right: auto;
@@ -264,33 +264,46 @@ a:hover {
   /* border-radius: 50px; */
 }
 
-/*==FOOTER==*/
-.footer-bg {
-  background-color: #324A58;
+/*== CONTACTS ==*/
 
+.contato {
+  padding: 2em;
+  min-height: 10vh;
+  text-align: center;
 }
 
 .contato .icons {
-  text-align: center;
-  word-spacing: 4em;
+  word-spacing: 2em;
 }
 
 .contato a {
-  color: whitesmoke;
+  color: white;
   font-size: 5em;
-  filter: opacity(50%) grayscale(100%);
-  transition: text-shadow 1s;
+  filter: opacity(49%) grayscale(100%);
+  transition: text-shadow 1s, color 1s;
 }
 
 .contato a:active,
 .contato a:hover {
   text-decoration: none;
+  color: black;
   filter: opacity(100%) grayscale(0);
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+  text-shadow: 0px 0px 100px rgb(255, 255, 255, 0.99);
 }
 
-.contato h3 {
+
+/*==FOOTER==*/
+/* .footer-bg p {
   color: whitesmoke;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
   text-align: center;
-  margin-bottom: 2em;
+  height: 20vh; 
+  margin-top: 10vh;
+} */
+.footer-bg {
+  text-align: center;
+  padding-bottom: 30px;
+  color: whitesmoke;
+  font-family: 'Source Sans Pro', sans-serif;
 }
