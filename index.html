@@ -17,66 +17,128 @@
 
 <body> 
   <header>
-    <nav class="menu">
-      <ul>
+    <nav class="menu ">
+      <ul class= "container">
         <li><a href="#"><i class="fas fa-laptop-house"></i></a></li>
-        <li><a href="#sobre"><i class="fas fa-info-circle"></i></a></li>
-        <li><a href="#portfolio">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#sobre">Sobre ℹ</a></li>
+        <li><a href="#portfolio">Projetos 🚧</a></li>
+        <li><a href="#contato">Contatos ☎</a></li>
       </ul>
     </nav>
     <!-- Div nao tem sentido semantico, gambiara para fazer um estilo. -->
     <div class="titulo">
       <h1 class="site-title">Afonso Roberto Plantes Neto</h1>
       <h2 class="site-subtitle">Engenheiro Eletricista</h2>
-      <h2 class="site-subtitle">Desenvolvedor de circuitos analógicos-mistos</h2>
+      <h2 class="site-subtitle">Desenvolvedor</h2>
     </div>
   </header>
 
   <!-- ABOUT ME  -->
-  <section class="sobre" id="sobre">
+  <section class="sobre container" id="sobre">
     <h2> Sobre</h2>
-    <p> EM BREVE </p>
+    <figure class = avatar>
+      <img src="img/about_foto.jpg" alt="foto_sobre">
+    </figure>
+
+    <p> 
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos incidunt nihil ratione magnam nobis voluptas consequatur quam blanditiis, doloribus, ipsam consectetur possimus! Architecto similique voluptate fuga soluta eius distinctio incidunt! 
+    </p>
+    <p> 
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos incidunt nihil ratione magnam nobis voluptas consequatur quam blanditiis, doloribus, ipsam consectetur possimus! Architecto similique voluptate fuga soluta eius distinctio incidunt! 
+    </p>
+    <p> 
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos incidunt nihil ratione magnam nobis voluptas consequatur quam blanditiis, doloribus, ipsam consectetur possimus! Architecto similique voluptate fuga soluta eius distinctio incidunt! 
+    </p>
+    <p>
+      Minima nesciunt quam, dolorem dolores ullam tempore eligendi numquam architecto expedita dicta eveniet vitae impedit est officia eos, excepturi at repellat. Sapiente sed explicabo rerum velit aut non at molestiae.
+    </p>
+    <p>
+      Officiis dolore placeat sed eveniet aut nulla, esse exercitationem odit! Iusto facere voluptatibus optio consequuntur, cum adipisci expedita unde harum nobis quam obcaecati architecto nesciunt ducimus minima quidem molestias illo.
+    </p>
+    <p>
+      Este site foi construído durante a
+        <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a>
+        😻
+    </p>
+    
   </section>
+
   <!-- PORTFOLIO -->
-  <section class="portfolio" id="portfolio">
+  <section class="portfolio container" id="portfolio">
     <h2>Projetos</h2>
     <div class="grid">
-      <figure>
-        <img class="img-portfolio" src="https://get.pxhere.com/photo/web-domain-service-website-development-seo-access-backup-data-database-e-commerce-hosting-html-http-marketing-programming-provider-resource-server-storage-support-system-tech-technology-www-illustration-sharing-electronic-device-business-learning-graphic-design-job-1571969.jpg" alt="Web design">
-        <figcaption>Web design</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="img/port_microeletronica2.jpg" alt="microeletronica">
-        <figcaption>Microeletronica</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="img/port_eletronica.jpg" alt=">electronics">
-        <figcaption>Eletronica</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="https://image.freepik.com/vetores-gratis/projeto-do-molde-do-vetor-de-smartphones_23-2147493776.jpg" alt=">Mobile">
-        <figcaption>Mobile</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="https://s3-sa-east-1.amazonaws.com/multilogica-files/Tutorial_1_Esquema.jpg" alt="Projetos pessoais">
-        <figcaption>Projetos pessoais</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="img/port_hobbies.jpg" alt="Hobbies">
-        <figcaption>Hobbies</figcaption>
-      </figure>
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="https://get.pxhere.com/photo/web-domain-service-website-development-seo-access-backup-data-database-e-commerce-hosting-html-http-marketing-programming-provider-resource-server-storage-support-system-tech-technology-www-illustration-sharing-electronic-device-business-learning-graphic-design-job-1571969.jpg" alt="Web design">
+          </figure>
+          <div class="card-back">
+            <h3><a href="#">Web desing</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="img/port_microeletronica2.jpg" alt="microeletronica">
+          </figure>
+          <div class="card-back">
+            <h3><a href="#">Microeletrônica</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="img/port_eletronica.jpg" alt=">electronics">
+          </figure>
+          <div class="card-back">
+            <h3><a href="#">Eletrônica</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="https://image.freepik.com/vetores-gratis/projeto-do-molde-do-vetor-de-smartphones_23-2147493776.jpg" alt=">Mobile">
+          </figure>
+          <div class="card-back">
+            <h3><a href="#">Mobile</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="https://s3-sa-east-1.amazonaws.com/multilogica-files/Tutorial_1_Esquema.jpg" alt="Projetos pessoais">
+          </figure>
+          <div class="card-back">
+            <h3><a href="#">Projetos pessoais</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="img/port_hobbies.jpg" alt="Hobbies">
+          </figure>
+          <div class="card-back">
+            <h3><a href="#">Hobbies</a></h3>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <footer class="footer-bg"></footer>
-    <section class="contato" id = contato >
-      <h2>Contato</h2>
+    <section class="contato container" id = contato >
+      <h2>Contatos</h2>
+      <h3> Locais onde você pode entrar em contato comigo </h3>
       <div class="grid icons">
         <a target="_blank" href="https://github.com/afonsoplantes"><i class="fab fa-github"></i> </a>
-        <a target="_blank" href="https://twitter.com/afonsoplantes"> <i class="fab fa-twitter"></i> </a>
-        <a target="_blank" href="https://linkedin.com/in/afonsoplantes">   <i class="fab fa-linkedin"></i> </a>
+        <a target="_blank" href="https://twitter.com/afonsoplantes"><i class="fab fa-twitter"></i> </a>
+        <a target="_blank" href="https://linkedin.com/in/afonsoplantes"><i class="fab fa-linkedin"></i> </a>
         <a href="mailto:afonso.plants@gmail.com"> <i class="fas fa-envelope"></i> </a>
       </div>
     </section>
