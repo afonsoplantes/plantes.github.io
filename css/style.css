@@ -239,6 +239,7 @@ a:hover {
 }
 
 .card-back {
+  
   color: white;
   display: flex;
   align-items: center;
@@ -257,8 +258,9 @@ a:hover {
   height: 180px;
   width: 100%;
   object-fit: cover;
-  object-position: left bottom;
+  object-position: center center;
   transition: transform 500ms;
+  background-color: white;
   /* border-radius: 50px; */
 }
 
@@ -272,7 +274,7 @@ a:hover {
 }
 
 .bg_contacts {
-  background-color: rgba(100, 100, 100, 0.5);
+  background-color: rgba(100, 100, 100, 0.15);
 }
 
 .contato .icons {
@@ -280,30 +282,23 @@ a:hover {
 }
 
 .contato a {
-  color: white;
+  color: rgb(223, 222, 222);
   font-size: 5em;
-  filter: opacity(49%) grayscale(100%);
+  filter: opacity(30%) grayscale(100%);
   transition: text-shadow 1s, color 1s;
 }
 
 .contato a:active,
 .contato a:hover {
   text-decoration: none;
-  color: rgb(0, 195, 255);
+  color: rgb(255, 255, 255);
   filter: opacity(100%) grayscale(0);
   text-shadow: 0px 0px 100px rgb(255, 255, 255, 0.99);
 }
 
 
 /*==FOOTER==*/
-/* .footer-bg p {
-  color: whitesmoke;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 12px;
-  text-align: center;
-  height: 20vh; 
-  margin-top: 10vh;
-} */
+
 .footer-bg {
   text-align: center;
   padding-bottom: 30px;
