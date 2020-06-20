@@ -1,7 +1,7 @@
 body {
   /* add an image */
-  background: url('../img/fundocontador.jpg');
-  background-size: auto;
+  /* background: url('../img/fundocontador.jpg'); */
+  /* background-size: auto 100vw; */
   /* set view por heigh to 100% /*/
   height: 100vh; 
   /* adds a blur to background */
@@ -35,6 +35,7 @@ body {
 }
 
 .cabecalho-index {
+  background: url('../img/fundocontador.jpg');
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -42,11 +43,24 @@ body {
 }
 
 header {
-  height: 20vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(../img/simon-berger-2JONUbTfN38-unsplash.jpg)
 }
+
+header h1 {
+  color: rgb(23, 6, 179);
+  text-align: center;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+header h1 {
+  font-size: 3em;
+  font-family: 'Luckiest Guy', cursive;
+}
+
 
 .menu {
   background-color:rgba(70, 66, 66, 0.712);
@@ -70,7 +84,7 @@ header {
 .menu a {
   display: block;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 5px 20px;
   transition: background-color 1s, color 1s;
 }
 
@@ -111,6 +125,7 @@ a:hover {
 .site-title {
   color: whitesmoke;
   text-align: center;
+  text-shadow:  2px 2px #000000;
 }
 
 .site-title {
@@ -126,14 +141,14 @@ a:hover {
 
 
 /* Pagina principal */
-
-.web-content,
 .sobre,
-.portfolio,
-.contato {
+.portfolio {
   padding: 2em;
   min-height: 100vh;
+  background: url("../img/patrick-fore-HVFYFns30-I-unsplash.jpg");
+  background-size: 100vh 100vw;
 }
+
 
 @media (min-width: 1200px) {
   .container {
@@ -141,11 +156,12 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
+    /* background: black; */
   }
 }
 
 
-.web-content h2,
+
 .sobre h2,
 .portfolio h2,
 .contato h2 {
@@ -184,7 +200,6 @@ a:hover {
 }
 
 
-.web-content p,
 .sobre p {
   color: white;
   text-align: justify;
@@ -282,6 +297,7 @@ a:hover {
   text-align: center;
 }
 
+
 .bg_contacts {
   background-color: rgba(100, 100, 100, 0.15);
 }
@@ -307,15 +323,43 @@ a:hover {
 
 
 /* Coisas para o site novo */
-.web-content li {
-  color: antiquewhite;
+
+.web-content{
+  background: url("../img/patrick-fore-HVFYFns30-I-unsplash.jpg");
+  padding: 1em;
 }
+
+.web-content h2 {
+  font-family: 'Satisfy', cursive;
+  color: whitesmoke;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.web-content p {
+  color: white;
+  text-align: justify;
+  text-indent: 2em;
+  margin-bottom: 1em;
+}
+
+.itens {
+  color: antiquewhite;
+  padding: 0.2em 0.2em;
+}
+
+.itens:before {
+  content: "✪";
+  margin-right: 0.5em;
+}
+
 .web-content a {
   text-decoration: underline;
 }
 
 .web-content a:hover {
-  color: rgb(81, 8, 83);
+  color: rgb(191, 209, 30);
   text-transform: uppercase;
   text-decoration: underline;
 }
