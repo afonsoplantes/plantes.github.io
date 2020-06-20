@@ -297,11 +297,6 @@ a:hover {
   text-align: center;
 }
 
-
-.bg_contacts {
-  background-color: rgba(100, 100, 100, 0.15);
-}
-
 .contato .icons {
   word-spacing: 2em;
 }
@@ -323,7 +318,6 @@ a:hover {
 
 
 /* Coisas para o site novo */
-
 .web-content{
   background: url("../img/patrick-fore-HVFYFns30-I-unsplash.jpg");
   padding: 1em;
